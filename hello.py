@@ -7,7 +7,7 @@ username = 'matt'
 password = 'asdf'
 content_length = os.environ["CONTENT_LENGTH"]
 cookie = os.environ["HTTP_COOKIE"]
-if cookie =='logged-in=True':
+if 'logged-in=True' in cookie:
 	logged_in = True
 
 #if this header is here, then the server has sent stuff
